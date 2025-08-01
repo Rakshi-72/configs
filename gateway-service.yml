@@ -9,7 +9,7 @@ spring:
           lower-case-service-id: true
       routes:
         - id: user-service
-          uri: lb://USER-SERVICE
+          uri: lb://user-service
           predicates:
             - Path=/user/**
           filters:
