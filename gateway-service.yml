@@ -9,11 +9,9 @@ spring:
           lower-case-service-id: true
       routes:
         - id: user-service
-          uri: lb://user-service
+          uri: lb://USER-SERVICE
           predicates:
             - Path=/user/**
-          filters:
-            - StripPrefix=1
 server:
   port: 8082
 eureka:
