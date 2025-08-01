@@ -18,3 +18,11 @@ eureka:
     appname: user-service
     prefer-ip-address: true
     instance-id: kichha
+
+# add actuator configs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
